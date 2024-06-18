@@ -483,7 +483,7 @@ def on_ui_tabs():
 def on_ui_settings():
     picker_path = Path(paths.script_path) / "training-picker"
     section = ('training-picker', "Training Picker")
-    opts.add_option("training_picker_fixed_size", OptionInfo(512, "Fixed size to resize images to", section=section))
+    opts.add_option("training_picker_fixed_size", OptionInfo(1024, "Fixed size to resize images to", section=section))
     opts.add_option("training_picker_videos_path", OptionInfo(str(picker_path / "videos"), "Path to read videos from", section=section))
     opts.add_option("training_picker_framesets_path", OptionInfo(str(picker_path / "extracted-frames"), "Path to store extracted frame sets in", section=section))
     opts.add_option("training_picker_default_output_path", OptionInfo(str(picker_path / "cropped-frames"), "Default cropped image output directory", section=section))
