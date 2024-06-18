@@ -212,7 +212,7 @@ outfill_methods = {
 
 def on_ui_tabs():
 
-    fixed_size = int(opts.training_picker_fixed_size)
+    fixed_size = 1024 #int(opts.training_picker_fixed_size)
     videos_path = Path(opts.training_picker_videos_path)
     framesets_path = Path(opts.training_picker_framesets_path)
     default_output_path = Path(opts.training_picker_default_output_path)
